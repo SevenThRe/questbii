@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.seventhre.questbii.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "plugin": "com.seventhre.questbii.mixin.MixinDistPlugin",
+  "client": [
+    "ViewQuestPanelMixin",
+    "ViewQuestPanelAccessor",
+    "QuestPanelMixin",
+    "QuestPanelAccessor",
+    "QuestScreenMixin",
+    "QuestScreenAccessor",
+    "QuestButtonAccessor",
+    "BaseScreenMixin",
+    "ScreenSuppressMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}

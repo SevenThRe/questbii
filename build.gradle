@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '[5.1,5.2)'
+}
+
+group = 'com.seventhre'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.19.2'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            mods {
+                questbii {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.minecraftforge.net' }
+    // FTB / Sophisticated 依赖在当前整合包无公开 maven 坐标可用，jar 固定放入 libs/。
+    // flatDir 给文件模块身份，fg.deobf 才能对生产 SRG jar 做重映射（与 1.20.1 工程同法）。
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:1.19.2-43.3.8"
+
+    // 编译期依赖：运行时由整合包提供，不打入 jar。
+    compileOnly fg.deobf("ftb-quests-forge:ftb-quests-forge:1902.5.8-build.345")
+    compileOnly fg.deobf("ftb-library-forge:ftb-library-forge:1902.4.1-build.236")
+    compileOnly fg.deobf("ftb-teams-forge:ftb-teams-forge:1902.2.14-build.123")
+    compileOnly fg.deobf("architectury:architectury:6.6.92-forge")
+    compileOnly fg.deobf("sophisticatedcore:sophisticatedcore:1.19.2-0.6.4.605")
+    compileOnly fg.deobf("sophisticatedbackpacks:sophisticatedbackpacks:1.19.2-3.20.2.1035")
+}
+
+jar {
+    manifest {
+        attributes('MixinConfigs': 'questbii.mixins.json')
+    }
+}
