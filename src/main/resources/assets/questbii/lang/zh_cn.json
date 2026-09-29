@@ -1,0 +1,34 @@
+{
+  "text.questbii.quick_complete": "一键获取物品并完成任务",
+  "text.questbii.quick_complete.hint": "自动打开 Sophisticated 背包，发包取出所需物品并完成物品任务",
+
+  "text.questbii.batch.start": "开始批量速达 (%s)",
+  "text.questbii.batch.clear": "清除选择",
+
+  "text.questbii.msg.running": "[任务速达] 流程进行中…",
+  "text.questbii.msg.no_tasks": "[任务速达] 没有可速达的物品任务",
+  "text.questbii.msg.prereq_locked": "[任务速达] 前置任务未完成，任务尚未解锁",
+  "text.questbii.msg.no_backpack": "[任务速达] 未找到 Sophisticated 背包，请确认已装备背包",
+  "text.questbii.msg.no_space": "[任务速达] 背包没有空槽且存量不足，无法注入",
+  "text.questbii.msg.inv_full": "[任务速达] 身上背包空间不足，部分物品未能取出",
+  "text.questbii.msg.container_closed": "[任务速达] 背包界面已关闭，流程中止",
+  "text.questbii.msg.sync_timeout": "[任务速达] 等待背包物品同步超时，流程中止",
+  "text.questbii.msg.flow_error": "[任务速达] 流程发生异常，已安全中止，详情见日志",
+  "text.questbii.msg.start": "[任务速达] 开始：需要 %s 种物品",
+  "text.questbii.msg.success": "[任务速达] 已完成",
+  "text.questbii.msg.incomplete": "[任务速达] 部分任务未完成，请查看任务界面",
+
+  "text.questbii.msg.batch_progress": "[任务速达] (%s/%s) %s",
+  "text.questbii.msg.batch_success": "[任务速达] 全部完成 %s/%s 个任务",
+  "text.questbii.msg.batch_summary": "[任务速达] 完成 %s 个，失败 %s 个",
+  "text.questbii.msg.batch_fail_line": "  %s — %s",
+
+  "text.questbii.reason.no_tasks": "无可支持任务",
+  "text.questbii.reason.prereq_locked": "前置未解锁",
+  "text.questbii.reason.no_backpack": "未找到背包",
+  "text.questbii.reason.no_space": "背包空槽不足",
+  "text.questbii.reason.sync_timeout": "同步超时",
+  "text.questbii.reason.container_closed": "背包已关闭",
+  "text.questbii.reason.incomplete": "验证超时未完成",
+  "text.questbii.reason.flow_error": "流程异常"
+}

@@ -1,0 +1,25 @@
+# Gradle / build artifacts
+build/
+bin/
+.gradle/
+run/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.eclipse/
+.classpath
+.project
+.settings/
+*.launch
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Note: libs/ is intentionally NOT ignored — it contains compile-time dependency jars
+# required for others to build the project (flatDir + fg.deobf).

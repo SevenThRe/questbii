@@ -1,0 +1,34 @@
+{
+  "text.questbii.quick_complete": "Quick Complete Quest",
+  "text.questbii.quick_complete.hint": "Open Sophisticated Backpack, extract items via packets and complete item tasks",
+
+  "text.questbii.batch.start": "Batch Quick Complete (%s)",
+  "text.questbii.batch.clear": "Clear Selection",
+
+  "text.questbii.msg.running": "[Quest Quick-Complete] Flow in progress…",
+  "text.questbii.msg.no_tasks": "[Quest Quick-Complete] No supported item tasks",
+  "text.questbii.msg.prereq_locked": "[Quest Quick-Complete] Prerequisite quests not completed yet",
+  "text.questbii.msg.no_backpack": "[Quest Quick-Complete] No Sophisticated Backpack found",
+  "text.questbii.msg.no_space": "[Quest Quick-Complete] Not enough empty slots in backpack",
+  "text.questbii.msg.inv_full": "[Quest Quick-Complete] Inventory full, some items not extracted",
+  "text.questbii.msg.container_closed": "[Quest Quick-Complete] Backpack closed, flow aborted",
+  "text.questbii.msg.sync_timeout": "[Quest Quick-Complete] Sync timeout, flow aborted",
+  "text.questbii.msg.flow_error": "[Quest Quick-Complete] Flow error, safely aborted. Check logs.",
+  "text.questbii.msg.start": "[Quest Quick-Complete] Starting: needs %s item type(s)",
+  "text.questbii.msg.success": "[Quest Quick-Complete] Done",
+  "text.questbii.msg.incomplete": "[Quest Quick-Complete] Some tasks incomplete, check quest UI",
+
+  "text.questbii.msg.batch_progress": "[Quest Quick-Complete] (%s/%s) %s",
+  "text.questbii.msg.batch_success": "[Quest Quick-Complete] All done %s/%s quests",
+  "text.questbii.msg.batch_summary": "[Quest Quick-Complete] %s done, %s failed",
+  "text.questbii.msg.batch_fail_line": "  %s — %s",
+
+  "text.questbii.reason.no_tasks": "No supported tasks",
+  "text.questbii.reason.prereq_locked": "Prerequisites locked",
+  "text.questbii.reason.no_backpack": "No backpack",
+  "text.questbii.reason.no_space": "Not enough slots",
+  "text.questbii.reason.sync_timeout": "Sync timeout",
+  "text.questbii.reason.container_closed": "Backpack closed",
+  "text.questbii.reason.incomplete": "Verify timeout",
+  "text.questbii.reason.flow_error": "Flow error"
+}
